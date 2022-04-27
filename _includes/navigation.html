@@ -1,0 +1,37 @@
+<nav class = "navbar">
+	<div class="nav-logo">
+		<a href="/index.html">
+			<img src="/assets/images/logos/moabi_logo1.png" alt="MOABI">
+		</a>
+	</div>
+	<div class="navbar-menu">
+		<ul>
+			{% assign items = site.data.navigation %}
+			{% for item in items %}
+					{% assign class = nil %}
+					{% if page.url contains item.link %}
+							{% assign class = 'current' %}
+					{% endif %}
+					{% if item.sublinks %}
+					<li>
+							<a  class="{{class}}" href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" >{{ item.name }}</a>
+							<ul>
+									{% for subitem in item.sublinks %}
+										<a  href="{{ site.url }}{{ site.baseurl }}{{ subitem.link }}">{{ subitem.name }}</a>
+									{% endfor %}
+							</ul>
+					</li>
+					{% else %}
+							<li>
+									<a class = "{{class}}" href="{{ site.url }}{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a>
+							</li>
+					{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="nav-logo">
+		<a href="https://www.aphp.fr">
+			<img src="/assets/images/logos/aphp-logo-blue.png" alt="">
+		</a>
+	</div>
+</nav>

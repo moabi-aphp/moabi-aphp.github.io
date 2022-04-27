@@ -1,0 +1,16 @@
+- date: ete 2016
+  detail: La décision de créer une plateforme  de bioinformatique supra-GH est validée
+- date: janvier 2017
+  detail: Création de la plateforme MOABI
+- date: juin 2017
+  detail: L'infrastructure BIO4G (serveurs de stockage, de calcul, réseau) est déployée
+- date: octobre 2017
+  detail: Déploiement du serveur GALAXY AP-HP
+- date: Juin 2018
+  detail: Déploiement de G-ROUTE AP-HP
+- date: Avril 2019
+  detail: Déploiement de LEAVES AP-HP
+- date: Décembre 2021
+  detail: Déploiement de MOABI-EAI, module permettant une connexion à GENNO
+- date: Mars 2022
+  detail: Début du développement de GARDEN AP-HP, le portail utilisateur

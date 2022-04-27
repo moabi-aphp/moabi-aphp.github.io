@@ -1,0 +1,688 @@
+
+$background-color-navbar:#FFF;
+$color-dark-grey:#707070;
+$color-light-grey: #E5E4E4;
+$color-green:#A1CB6B;
+$color-blue:#0063AF;
+
+$icon-width: 45px;
+$icon-height: 45px;
+
+
+/* Global */
+* {
+  margin: 0;
+  padding: 4px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a[href^="mailto:"]
+{
+  color: $color-dark-grey;
+  text-decoration: none;
+  font-style: normal;
+}
+a[href^="mailto:"]:hover
+{
+  color: $color-blue;
+  font-style: normal;
+}
+
+/* people page*/
+.people h1 {
+  color: $color-dark-grey
+}
+.people-function {
+    font-style: italic;
+    font-weight: bold;
+    color: $color-dark-grey;
+}
+
+.people-content p {
+  color: $color-dark-grey;
+  text-align: justify;
+  line-height: 2em;
+}
+
+
+/* post page*/
+.post h1 {
+  color: $color-dark-grey
+}
+
+.post-date {
+    font-style: italic;
+    color: $color-dark-grey;
+}
+
+.post-content p {
+  color: $color-dark-grey;
+  text-align: justify;
+  line-height: 2em;
+}
+
+/* contact page */
+.moabi-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.moabi-contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:500px;
+  height: 400px;
+}
+
+.moabi-contact-form p {
+  color: $color-dark-grey;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.moabi-contact-form-note {
+  color: $color-dark-grey;
+  font-style: italic;
+  font-size: 11px;
+}
+
+
+/* content page layout*/
+header {
+  display: flex;
+  height: 150px;
+/*  background-color: $color-light-grey;*/
+  background-image: url(/assets/images/logos/header_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color: $color-dark-grey;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px #FFF;
+}
+
+.more-button {
+  background-color: $color-dark-grey;
+  text-transform: lowercase;
+  border-radius: 10px;
+  margin-top: 20px;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+  border: solid 1px $color-dark-grey;
+}
+
+.more-button:hover {
+  background-color: $color-light-grey;
+  border: solid 1px $color-dark-grey;
+}
+.more-button a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 12px;
+}
+.more-button:hover a {
+  color: $color-dark-grey;
+}
+
+.page-content {
+  display : flex;
+  flex-direction: column;
+}
+
+.page-content-gouvernance {
+  display : flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-intro{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.page-intro p {
+  color: $color-dark-grey;
+  line-height: 2em;
+}
+
+.section-title{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section-title-img {
+  width: 25px;
+  height: 25px;
+  background-image: url(/assets/images/logos/moabi_puce_25px.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.section-title-label {
+  text-transform: uppercase;
+  color:$color-blue;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  color: $color-dark-grey;
+}
+
+.section-content p{
+  text-align: justify;
+  line-height: 2em;
+}
+
+/*Actualité*/
+.cards-actu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-actu{
+  border: solid 2px $color-dark-grey;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.card-actu:hover{
+  box-shadow: 0 4px 38px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-actu-img img {
+  height: 200px;
+}
+.card-actu-img {
+  border: solid 2px $color-light-grey;
+}
+
+.card-actu-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-actu-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-actu-title {
+  text-transform: uppercase;
+  color: $color-dark-grey;
+  font-weight: bolder;
+}
+
+.card-actu-subhead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: stretch;
+}
+
+.card-actu-date {
+  color: $color-dark-grey;
+}
+
+.card-actu-categorie {
+  text-transform: uppercase;
+  font-style: italic;
+  color: $color-dark-grey;
+}
+.card-actu-summary {
+  color: $color-dark-grey;
+}
+
+
+
+/*MOABI gouvernance*/
+.card-gouv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 450px;
+}
+
+.card-gouv-head{
+  background-color: $color-green;
+  color: #FFF;
+  font-weight: bolder;
+  text-transform: uppercase;
+  height: 50px;
+  text-align: center;
+}
+
+.card-gouv-section-title {
+  color: $color-dark-grey;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.card-gouv-section-content {
+  text-align: justify;
+  color: $color-dark-grey;
+}
+
+/*MOABI missions*/
+
+.moabi-missions {
+  margin-top: 50px;
+  display: flex;
+  flex-direction:  row;
+  justify-content: space-around;
+}
+
+.moabi-mission{
+  width: 220px;
+  height: 220px;
+  border: solid $color-blue;
+  border-width: thin;
+  background-color: $color-green;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.moabi-mission:hover {
+  box-shadow: 0 4px 38px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.moabi-mission-icon {
+  text-align: center;
+  width: $icon-width;
+  height: $icon-height;
+  fill: $color-blue;
+  margin-bottom: 20px;
+}
+
+.moabi-mission-title {
+  text-align: center;
+  width: 100%;
+  color: #FFF;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.moabi-mission-content {
+  text-align: center;
+  width: 100%;
+  color: #FFF;
+}
+
+
+/* moabi */
+#sectionContentOutils {
+  display: flex;
+  flex-direction: column;
+}
+.section-outils {
+  display: flex;
+  justify-content: space-between;
+}
+.outil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: #FFF;
+  border : solid 1px;
+}
+.outil:hover {
+  box-shadow: 0 4px 38px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.outils-logo {
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.timeline-container{
+  width:50%;
+  margin:auto;
+  display:block;
+  position:relative;
+}
+.timeline-container ul.tl{
+    margin:20px 0;
+    padding:0;
+    display:inline-block;
+    width: 800px;
+}
+
+.timeline-container ul.tl li{
+    list-style: none;
+    margin:auto;
+    margin-left:50%;
+    min-height:150px;
+    border-left:2px solid $color-dark-grey;
+    padding:0 0 50px 30px;
+    position:relative;
+}
+
+.timeline-container ul.tl li:last-child{
+  border-left:0;
+}
+
+.timeline-container ul.tl li:last-child::before{
+  position: absolute;
+  left: -17px;
+  top: -5px;
+  content: " ";
+  border: 8px solid $color-green;
+  border-radius: 200%;
+  background: $color-blue;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+.timeline-container ul.tl li::before{
+    position: absolute;
+    left: -19px;
+    top: -5px;
+    content: " ";
+    border: 8px solid $color-green;
+    border-radius: 200%;
+    background: $color-blue;
+    height: 20px;
+    width: 20px;
+    transition: all 500ms ease-in-out;
+}
+
+ul.tl li .tl-item-detail{
+    color:$color-dark-grey;
+    font-size:18px;
+    text-align: left;
+}
+
+ul.tl li .tl-timestamp{
+    color: $color-dark-grey;
+    font-weight: bolder;
+    position: absolute;
+    width:100px;
+    left: -40%;
+    text-align: right;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+ul.tl li .tl-item-detail-rev{
+    color: $color-dark-grey;
+    font-size:18px;
+    position: absolute;
+    right: 115%;
+    left: -100%;
+    text-align: right;
+}
+
+ul.tl li .tl-timestamp-rev {
+    color: $color-dark-grey;
+    font-weight: bolder;
+    position: absolute;
+    width:150px;
+    left: 8%;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+
+/* team page*/
+
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.team-member  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width:300px;
+  height: 375px;
+  padding: 0px;
+  margin: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.team-member:hover  {
+  width:300px;
+  height: 375px;
+  box-shadow: 0 4px 38px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.team-member-head {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 123px;
+  background-color: $color-blue;
+}
+.team-member-avatar {
+  width: 150px;
+  height: 150px;
+	border: 3px solid $color-blue;
+	border-radius: 50%;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.team-member-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: $color-dark-grey;
+}
+.team-member-prenom {
+  text-transform: capitalize;
+}
+.team-member-nom {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.team-member-poste{
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* contact page*/
+.contact {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.contact-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.contact-panel-head {
+  width: 100%;
+  text-transform: uppercase;
+  color: $color-blue;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mailing-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mailing-list-element{
+  display: flex;
+  flex-direction: row;
+}
+
+.mailing-list-element-label{
+  color : $color-dark-grey;
+  text-transform: uppercase;
+}
+
+.mailing-list-element-mail{
+  color: $color-dark-grey
+}
+
+
+/*
+.titre-a-puce::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  align-content: center;
+  background-image: url(/assets/images/moabi_puce_25px.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  float: left;
+}*/
+
+
+
+/*.contact div {
+  border: solid 1Px;
+}*/
+
+
+/* css navbar*/
+.nav-logo img{
+  height: 50px;
+}
+
+.parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  /*background-color: yellow;*/
+}
+
+
+.wrapper {
+  position: relative;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+/*  background-color: pink;*/
+  display: flex;
+  flex-direction: column;
+  /*height: 100vh;  */
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  width: 100%;
+  top : 0px;
+  left: 0px;
+  background-color: $background-color-navbar;
+  border-bottom: solid 1px;
+  box-shadow: 0 4px 38px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 20;
+}
+
+.navbar-menu
+{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $color-light-grey;
+  border-radius: 6px;
+  /*text-transform: uppercase;*/
+}
+
+.navbar-menu ul
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar-menu ul li
+{
+  list-style: none;
+  padding: 4px;
+  width:120px;
+  position: relative;
+  transition: 0.5s;
+  display: block;
+  text-align: center;
+}
+
+.navbar-menu ul li a
+{
+  color: $color-dark-grey;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navbar-menu ul li a:hover
+{
+  background-color: $color-dark-grey;
+  color:$color-light-grey;
+  border-radius: 6px;
+}
+
+/*.navbar-menu ul li .current
+{
+  color:red;
+}*/
+
+
+.navbar-menu ul li ul
+{
+  display: none;
+}
+
+.navbar-menu ul li:hover ul
+{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: absolute;
+  margin-top: 5px;
+  background: $color-light-grey;
+  border-radius: 6px;
+  width: 100%;
+  padding: 10px 2px;
+  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+  border: 1px solid;
+  text-align: center;
+}
