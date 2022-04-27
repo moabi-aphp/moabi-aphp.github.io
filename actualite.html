@@ -1,0 +1,50 @@
+---
+layout: content_page
+title: MOABI - Actualité
+subtitle: Actualité
+---
+<div class="actualite">
+	<div class="page-intro">
+		<p>
+		</p>
+	</div>
+
+
+	<div class="page-content">
+		<div class="cards-actu">
+
+			{% for post in site.posts %}
+
+			<div class="card-actu">
+				<div class="card-actu-img">
+					<img src="/assets/images/logos/moabi_puce.png" alt="">
+				</div>
+				<div class="card-actu-content">
+					<div class="card-actu-head">
+						<div class="card-actu-title">
+							{{post.title}}
+						</div>
+						<div class="card-actu-morebuttn">
+							<div class="more-button" style="margin-top: 0px;">
+								<a href="{{post.url}}">en savoir plus..</a>
+							</div>
+						</div>
+					</div>
+					<div class="card-actu-subhead">
+						<div class="card-actu-date">
+							{{post.date | date_to_string}} -
+						</div>
+						<div class="card-actu-categorie" >
+							{{post.categorie}}
+						</div>
+					</div>
+					<div class="card-actu-summary">
+						{{ post.excerpt }}
+					</div>
+				</div>
+			</div>
+			{% endfor%}
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,52 @@
+---
+layout: content_page
+title: MOABI Equipe
+subtitle: une équipe à votre ecoute
+---
+
+<div class="team">
+  <div class="page-intro">
+    <p>
+      La confiance, l'engagement, la cohésion, l'écoute, la flexibilité, l'inventivité, le caractère, l'espièglerie, la résilience, les vers de terre, sont, dans le désordre, les valeurs que nous partageons dans l'équipe.
+    </p>
+  </div>
+
+  <div class="team-members">
+    {% for teammate in site.people %}
+    <div class="team-member">
+      <div class="team-member-head">
+        {% if teammate.avatar %}
+          <div class="team-member-avatar" style="background-image:url(/assets/images/team/{{teammate.avatar}})">
+          </div>
+        {% else %}
+          <div class="team-member-avatar" style="background-image:url(/assets/images/team/defaut.png)">
+          </div>
+        {% endif %}
+      </div>
+      <div class="team-member-content">
+        <div class="team-member-prenom">
+          <p>
+            {{teammate.prenom}}
+          </p>
+        </div>
+        <div class="team-member-nom">
+          <p>
+            {{teammate.nom}}
+          </p>
+        </div>
+        <div class="team-member-poste">
+          <p>
+            {{teammate.poste}}
+          </p>
+        </div>
+        <div class="more-button">
+           <a href = "{{teammate.url}}">
+             en savoir plus ...
+           </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
