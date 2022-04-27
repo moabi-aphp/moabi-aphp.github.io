@@ -1,6 +1,151 @@
 ---
 layout: content_page
-title: MOABI Home
-subtitle: accueil
+title: MOABI
+subtitle: Présentation
 ---
-<h1>{{ "Hello Woooorllld!" | downcase }}</h1>
+<div class="moabi">
+	<div class="page-intro">
+		<p>
+			En 2015, un groupe de travail sur le séquençage ADN haut-débit (aussi appelé Next Generation Sequencing - NGS), mis en place avec les chefs de pôle de biologie par la Direction de l’Organisation Médicale et des relations avec les Universités (DOMU) de l’AP-HP et présidé par le directeur du groupe hospitalier Necker – Enfant Malades, a acté la nécessité de la création d’une plateforme de service en bioinformatique médicale, supra-GH, accompagnant les généticiens de l’AP-HP à gérer (i) la donnée entre la sortie de séquenceur et le rendu du résultat validé, (ii) son stockage et (iii) son éventuelle réutilisation.
+		</p>
+		<p>
+			Impulsée par le siège de l’AP-HP d’une part, et une subvention européenne du FEDER d’autre part, la plateforme IDF-Seq IT, renommée MOABI AP-HP, voit le jour en 2016.
+		</p>
+	</div>
+	<div class="page-content">
+
+		<!-- section localisation-->
+		<div class="page-section">
+			<div class="section-title">
+				<div class="section-title-img">
+				</div>
+				<div class="section-title-label">
+					<p>
+						localisation
+					</p>
+				</div>
+			</div>
+			<div class="section-content" >
+				<div>
+					<img src="/assets/images/sections/picpus.png" alt = "SITE DE PICPUS">
+				</div>
+				<div>
+					<p>
+						La plateforme de bioinformatique est un des services du pôle Innovation & Données, au sein de la DSI centrale.
+					</p>
+					<p>
+						Les locaux sont situés au 7ème étage du batiment Campus Picpus, 33 boulevard de Picpus.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- section outils-->
+		<div class="page-section">
+			<div class="section-title">
+				<div class="section-title-img">
+				</div>
+				<div class="section-title-label">
+					<p>
+						outils
+					</p>
+				</div>
+			</div>
+			<div class="section-content"  id ="sectionContentOutils">
+				<div class="">
+					<p>
+						La plateforme MOABI propose des applications web dédiées à la gestion et l'analyse de données pour accompagner les biologistes et cliniciens des laboratoires de biologie médicale dans leur activités de médecine génomique.
+					</p>
+				</div>
+				<div class="section-outils" >
+					<div class="outil">
+						<div class = "outils-logo" style="background-image: url(/assets/images/logos/galaxy.png)">
+						</div>
+						<div>
+							<p style="font-weight: bold">
+								GALAXY AP-HP
+							</p>
+						</div>
+						<div class="more-button">
+							<a href="galaxy.html">
+							 en savoir plus ...
+							</a>
+						</div>
+					</div>
+					<div class="outil">
+						<div class = "outils-logo" style="background-image: url(/assets/images/logos/g_route.png)">
+						</div>
+						<div>
+							<p style="font-weight: bold">
+								G-ROUTE
+							</p>
+						</div>
+						<div class="more-button">
+							<a href="groute.html">
+							 en savoir plus ...
+							</a>
+						</div>
+					</div>
+					<div class="outil">
+						<div class = "outils-logo" style = "  background-image: url(/assets/images/logos/leaves.png)">
+						</div>
+						<div>
+							<p style="font-weight: bold">
+								LEAVES
+							</p>
+						</div>
+						<div class="more-button">
+							<a href="leaves.html">
+							 en savoir plus ...
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- section histoire-->
+		<div class="page-section">
+			<div class="section-title">
+				<div class="section-title-img">
+				</div>
+				<div class="section-title-label">
+					<p>
+						historique
+					</p>
+				</div>
+			</div>
+			<div class="section-content">
+				<div class="timeline-container">
+					<ul class = "tl">
+						{% assign items = site.data.historique | reverse %}
+						{% assign num = 0 %}
+						{% for item in items %}
+						{% assign mod = num | modulo :2 %}
+						{% if mod == 0 %}
+						<li class = "tl-item">
+						 <div class="tl-timestamp">
+							 {{item.date}}
+						 </div>
+						 <div class="tl-item-detail">
+							 {{item.detail}}
+						 </div>
+					 </li>
+						{% else %}
+						<li class = "tl-item">
+						 <div class="tl-timestamp-rev">
+							 {{item.date}}
+						 </div>
+						 <div class="tl-item-detail-rev">
+							 {{item.detail}}
+						 </div>
+					 </li>
+						{% endif %}
+						{% assign num = num | plus: 1 %}
+						{% endfor%}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
