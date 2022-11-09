@@ -151,6 +151,17 @@ header h1 {
   line-height: 2em;
 }
 
+.page-intro ul  li  {
+  color: $color-dark-grey;
+  line-height: 2em;
+}
+
+.page-intro ul li a {
+  color: $color-dark-grey;
+  font-weight: bold;
+  line-height: 2em;
+}
+
 .section-title{
   display:flex;
   justify-content: flex-start;
