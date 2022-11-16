@@ -38,7 +38,7 @@
     - name: Pour l'exome
       link: /pipelines_exome.html
     - name: Pipelines spécifiques
-      link: pipelines_specifiques.html
+      link: /pipelines_specifiques.html
 - name: Equipe
   link: /team.html
 - name: Contact
