@@ -37,7 +37,7 @@
       link: /pipelines_arn.html
     - name: Pour l'exome
       link: /pipelines_exome.html
-    - name: Pipeline spécifiques
+    - name: Pipelines spécifiques
       link: pipelines_specifiques.html
 - name: Equipe
   link: /team.html
