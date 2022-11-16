@@ -31,10 +31,14 @@
   sublinks:
     - name: Présentation
       link: /pipelines_presentation.html
-    - name: Pour l'ADN
-      link: /pipelines_adn.html
+    - name: Pour le panel
+      link: /pipelines_panel.html
     - name: Pour l'ARN
       link: /pipelines_arn.html
+    - name: Pour l'exome
+      link: /pipelines_exome.html
+    - name: Pipeline spécifiques
+      link: pipelines_specifiques.html
 - name: Equipe
   link: /team.html
 - name: Contact
