@@ -12,5 +12,9 @@
   detail: Déploiement de LEAVES AP-HP
 - date: Décembre 2021
   detail: Déploiement de MOABI-EAI, module permettant une connexion à GENNO
+- date: Fevrier 2022
+  detail: Début du développement de BLOOM AP-HP, le module de gestion des utilisateurs
 - date: Mars 2022
-  detail: Début du développement de GARDEN AP-HP, le portail utilisateur
+  detail: Début du développement de SEEDS AP-HP pour la soumission de panel de gènes
+- date: Juin 2022
+  detail: Internalisation du serveur dépôt
