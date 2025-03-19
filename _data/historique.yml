@@ -20,6 +20,8 @@
   detail: Internalisation du serveur dépôt
 - date: Janvier 2023
   detail: Interconnexion avec GENNO opérationnelle
+- date: Septembre 2023
+  detail: Début de la refonte de G-ROUTE AP-HP
 - date: Janvier 2024
   detail: Intégration de gLeaves, l'outils de prescription de SeqOIA
 - date: Mars 2025
