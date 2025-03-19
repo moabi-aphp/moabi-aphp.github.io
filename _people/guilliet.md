@@ -3,7 +3,7 @@ layout: people
 subtitle: une équipe à votre écoute
 prenom: Joseph
 nom: Guilliet
-poste: Ingénieur de recherche génétique et bioinformatique
+poste: Ingénieur de recherche
 ---
 
 
